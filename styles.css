@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "outfit", sans-serif;
+}
+
+/* CARD AND MAIN IMAGE */
+html,
+body {
+  height: 100%;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: hsl(217, 54%, 11%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0px 500px black;
+  border-radius: 16px;
+}
+
+.card-content {
+  width: 325px;
+  height: auto;
+  border-radius: 16px;
+  background-color: hsl(216, 50%, 16%);
+}
+
+.nft-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nft-image {
+  margin-top: 20px;
+  border-radius: 10px;
+  height: 285px;
+  width: 285px;
+}
+
+/* Main Text */
+.text {
+  margin: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+/* ICONS */
+
+.icons {
+  list-style: none;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ethereum-icon {
+  display: flex;
+  margin-right: 50px;
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.clock-icon {
+  display: flex;
+  margin-left: 50px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin: 3px;
+}
+
+/* Divider Horizontal Line */
+
+.divider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider {
+  width: 285px;
+  height: 0.1px;
+  background-color: hsl(215, 51%, 70%);
+  display: inline-blocks;
+}
+
+/* Profile */
+.profiles {
+  margin: 15px 0 25px 25px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.profile-text {
+  margin-left: 15px;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(215, 51%, 70%);
+}
+
+span {
+  font-size: 15px;
+  color: hsl(0, 0%, 100%);
+}
+
+#avatar-image {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  border: 1px solid hsl(0, 0%, 100%);
+}
