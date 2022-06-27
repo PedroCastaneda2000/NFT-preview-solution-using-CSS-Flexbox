@@ -1,3 +1,4 @@
+/* ---------- Global ---------- */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,6 +6,22 @@
   font-family: "outfit", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ---------- /Global ---------- */
+
+/* ---------- Main Container ---------- */
 .main {
   background-color: hsl(217, 54%, 11%);
 
@@ -15,29 +32,31 @@
 }
 
 .container {
-  max-width: 300px;
-  height: auto;
   background-color: hsl(216, 50%, 16%);
-  border-radius: 12.5px;
-  box-shadow: 0 25px 5px 20px hsla(216, 50%, 10%, 0.5);
+
+  max-width: 18.75rem;
+  height: auto;
+  border-radius: 0.8125rem;
+  box-shadow: 0 1.625rem 0.3125rem 1.25rem hsla(216, 50%, 10%, 0.5);
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+/* ---------- /Main Container ---------- */
 
-/* main image */
+/* ---------- Main Image---------- */
 .main-image {
-  width: 260px;
-  height: 260px;
-  margin: 20px 20px 0px 20px;
+  width: 16.25rem;
+  height: 16.25rem;
+  margin: 1.25rem 1.25rem 0px 1.25rem;
 }
 
 #cube-image {
-  width: 260px;
-  height: 260px;
-  border-radius: 7.5px;
+  width: 16.25rem;
+  height: 16.25rem;
+  border-radius: 0.5rem;
 }
 
 #cube-image:hover {
@@ -46,55 +65,60 @@
 
 .main-image:hover {
   background-color: hsla(178, 100%, 50%, 0.45);
-  border-radius: 5px;
-  cursor: pointer;
-  background-size: 45px 45px;
+
+  border-radius: 0.3125rem;
+  background-size: 2.8125rem 2.8125rem;
   background-repeat: no-repeat;
   background-position: center;
   filter: brightness(1.5);
   background-image: url(images/icon-view.svg);
 }
+/* ---------- /Main Image---------- */
 
-/* main text */
+/* ---------- Main Text---------- */
 h1 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: hsl(0, 0%, 100%);
 }
 
 p {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 300;
   color: hsl(215, 51%, 70%);
 }
 
 .text {
-  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
+
 .main-text {
-  margin: 0 20px 0 20px;
+  margin: 0 1.375rem 0 1.375rem;
 }
 
 h1:hover {
   cursor: pointer;
   color: hsl(178, 100%, 50%);
 }
+/* ---------- /Main Text---------- */
 
-/* main icons*/
-
-h2 {
-  font-size: 15px;
+/* ---------- Main Icons---------- */
+.ethereum-icon p {
+  font-size: 0.9375rem;
   font-weight: 600;
   color: hsl(178, 100%, 50%);
 }
 
-h3 {
-  font-size: 15px;
+.clock-icon p {
+  font-size: 0.9375rem;
   font-weight: 300;
   color: hsl(215, 51%, 70%);
 }
+
 .main-icons {
-  margin: 20px 20px 0 20px;
+  margin: 1.25rem 1.25rem 0 1.25rem;
+  border-bottom: 1px solid hsl(215, 51%, 70%);
+  padding-bottom: 1.25rem;
 
   display: flex;
   flex-direction: row;
@@ -103,41 +127,41 @@ h3 {
 }
 
 .ethereum-icon {
-  margin-right: 35px;
+  margin-right: 2.125rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .clock-icon {
-  margin-left: 35px;
+  margin-left: 2.125rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #icon {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
+/* ---------- /Main Icons---------- */
 
-/* main break*/
-.main-divider {
-  margin-top: 20px;
-}
-.divider-container {
-  width: 260px;
-  height: 0.1px;
-  background-color: hsl(215, 51%, 70%);
-  display: inline-blocks;
-}
-
-/* main profile*/
-h4 {
-  font-size: 15px;
-  font-weight: 400;
-  color: hsl(215, 51%, 70%);
-}
-
+/* ---------- Main Profile---------- */
 span {
   color: hsl(0, 0%, 100%);
 }
 
+.profile-text p {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: hsl(215, 51%, 70%);
+}
+
 .main-profile {
-  margin: 20px 50px 30px 0;
+  margin: 1.25em 3.125rem 1.875rem 0;
 
   display: flex;
   flex-direction: row;
@@ -146,14 +170,15 @@ span {
 }
 
 #avatar-image {
-  width: 30px;
-  height: 30px;
-  border: 1px solid hsl(0, 0%, 100%);
+  width: 1.875em;
+  height: 1.875em;
+  border: 0.0625rem solid hsl(0, 0%, 100%);
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 0.9375rem;
 }
 
 span:hover {
   cursor: pointer;
   color: hsl(178, 100%, 50%);
 }
+/* ---------- /Main Profile---------- */
